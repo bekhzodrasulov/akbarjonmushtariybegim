@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Regular.woff2") format("woff2"),
+    url("DancingScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Bold.woff2") format("woff2"),
+    url("DancingScript-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-Medium.woff2") format("woff2"),
+    url("DancingScript-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("DancingScript-SemiBold.woff2") format("woff2"),
+    url("DancingScript-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  font-family: "Cormorant Infant", serif;
+  background-color: #fefefc;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+.head-title {
+  font-family: "Dancing Script", serif;
+  font-size: 28px;
+}
+
+.couples-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+.wadding-date {
+  font-family: "Dancing Script", serif;
+}
+
+.wedding-title {
+  font-family: "Dancing Script", serif;
+  font-size: 24px;
+}
+
+.wedding-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.invitation {
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
+  padding: 20px 0 0 0;
+}
+
+.column {
+  background: #ffffff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.column.green {
+  background-color: #51785d;
+  color: white;
+}
+
+.column p {
+  font-family: "Dancing Script", cursive;
+}
+
+.wedding-place {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+}
+
+.restaurant-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+}
+
+.restaurant-address {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+}
+
+.contacts-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+}
+
+.closing-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+}
+
+.border-box {
+  border: 1px solid #51785d;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.highlight {
+  position: relative;
+  font-weight: bold;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid #51785d;
+  border-radius: 50%;
+}
+
+.calendar p {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.calendar table {
+  border-collapse: separate;
+  border-spacing: 10px 10px; /* горизонталь, вертикаль */
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.calendar th,
+.calendar td {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #51785d;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+
+.countdown {
+  display: flex;
+  gap: 50px;
+}
+
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.countdown p {
+  font-size: 12px;
+}
+
+.location-icon {
+  height: 130px;
+  position: relative;
+  z-index: 3;
+}
+
+.text-block,
+.program,
+.chat,
+.contacts,
+.closing,
+.venue,
+.dress-code,
+.details,
+.qr {
+  text-align: center;
+}
+
+.palette {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.dark-green {
+  background-color: #2d3c33;
+}
+.green {
+  background-color: #4e6650;
+}
+.olive {
+  background-color: #7c9473;
+}
+.beige {
+  background-color: #d5d2c2;
+}
+.white {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.venue img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qr img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+  opacity: 0;
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  padding: 0 116px;
+  gap: 10px;
+}
