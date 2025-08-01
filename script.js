@@ -29,8 +29,24 @@ const observer = new IntersectionObserver(
 
 elements.forEach((el) => observer.observe(el));
 
+const playButton = document.getElementById("playButton");
+const playIcon = document.getElementById("playIcon");
+const bgMusic = document.getElementById("bgMusic");
+
+playButton.addEventListener("click", () => {
+  if (bgMusic.paused) {
+    bgMusic.play();
+    playIcon.src = "images/pouse.png";
+    playIcon.alt = "Pause";
+  } else {
+    bgMusic.pause();
+    playIcon.src = "images/play.png";
+    playIcon.alt = "Play";
+  }
+});
+
 function updateCountdown() {
-  const weddingDate = new Date("2025-08-22T19:00:00");
+  const weddingDate = new Date("2025-08-24T09:00:00");
   const now = new Date();
   const diff = weddingDate - now;
 
