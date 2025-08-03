@@ -18,7 +18,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add("visible");
-        }, index * 150); // задержка между появлениями
+        }, index * 10); // задержка между появлениями
       }
     });
   },

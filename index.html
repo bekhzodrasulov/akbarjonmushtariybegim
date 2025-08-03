@@ -38,15 +38,21 @@
     <div class="wrapper">
       <main class="invitation">
         <section class="save-date">
-          <img src="images/img4.png" alt="Couple" class="photo-full" />
-          <div>
-            <h1>Save the Date</h1>
-            <div class="date">11.05.25</div>
-            <div class="scroll-hint">Листайте вниз ↓</div>
+          <div class="header-container">
+            <img src="images/akbarake1.webp" alt="Couple" class="header-photo animate slide-left" />
+          <div class="header-date animate slide-right">
+            <div class="date-text">save</div>
+            <div class="date-time">24</div>
+            <div class="date-text">the</div>
+            <div class="date-time">08</div>
+            <div class="date-text">date</div>
+            <div class="date-time">25</div>
           </div>
+          </div>
+          <div class="scroll-hint">Листайте вниз ↓</div>
         </section>
 
-        <section class="message-block column">
+        <section class="message-block column animate fade-up">
           <h2>Дорогой наш гость!</h2>
           <p>
             С любовью и благодарностью в сердцах прглашаемвас разделить снами
@@ -58,15 +64,13 @@
           </p>
         </section>
 
-        <section class="save-date column">
-          <div class="">
-            <h1 calssName="fristWords">
-              <span>A</span
-              ><img style="height: 30px" src="images/vs.png" alt="and" /><span
-                >M</span
-              >
+        <section class="save-date">
+          <div class="second-container">
+            <h1 calssName="fristWords animate slide-left">
+              <span class="letters">A</span>
+              <br><img style="height: 30px" src="images/vs.png" alt="and" /><br><span class="letters">M</span>
             </h1>
-            <img src="images/img5.png" alt="Couple 2" class="photo-full" />
+            <img src="images/akbarake2.webp" alt="Couple 2" class="second-photo animate slide-right" />
           </div>
           <div>
             <div class="music-control">
@@ -85,30 +89,31 @@
             </div>
             <div class="countdown-container">
               <div class="countdown">
-                <div>
+                <div class="animate slide-left">
                   <span id="days">0</span>
-                  <p>дней</p>
+                  <p class="days-text">дней</p>
                 </div>
-                <div>
+                <div class="animate fade-up">
                   <span id="hours">0</span>
-                  <p>часов</p>
+                  <p class="hours-text">часов</p>
                 </div>
-                <div>
+                <div class="animate fade-down">
                   <span id="minutes">0</span>
-                  <p>минут</p>
+                  <p class="minutes-text">минут</p>
                 </div>
-                <div>
+                <div class="animate slide-right">
                   <span id="seconds">0</span>
-                  <p>секунд</p>
+                  <p class="seconds-text">секунд</p>
                 </div>
               </div>
             </div>
+            <h3 class="timing">timing</h3>
           </div>
         </section>
 
         <section class="save-date column">
-          <img src="images/img2.png" alt="Couple 2" class="photo-full" />
-          <div class="calendar">
+          <img src="images/akbarake3.webp" alt="Couple 2" class="third-photo animate fade-up" />
+          <div class="calendar animate fade-down">
             <p>Август</p>
             <table>
               <tr>
@@ -167,25 +172,30 @@
               </tr>
             </table>
           </div>
-          <h1>date</h1>
+          <div class="calendar-date">date</div>
         </section>
 
-        <section class="section-dark column">
-          <h2>Ресторан “Diamond Hall”</h2>
-          <p class="location">Самарканд Дарвоза, 203<br />Ташкент</p>
-          <button onclick="window.open('https://maps.google.com')">
+        <section class="save-date" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <img src="images/akbarake4.webp" alt="Couple 2" class="header-photo animate fade-up" />
+          <div></div>
+        </section>
+
+        <section class="section-dark column" style="display: flex; flex-direction: column; align-items: center;">
+          <h3 style="font-size: 20px;">Ресторан</h3>
+          <h2 class="restaurant-name">“Sarbon”</h2>
+          <p class="location">Жуйдам ул.Фаргона, 27В<br />г.Фергана</p>
+          <a href="https://yandex.uz/maps/-/CHd4iXZE"><img style="width: 50px; height: 50px" src="images/location-svgrepo-com.svg" alt="Location"></a>
+          <a class="btn-location" href="https://yandex.uz/maps/-/CHd4iXZE">
             Локация
-          </button>
-          <p>Мы ждём вас 24 августа 17:00</p>
+          </a>
+          <p>Мы ждём вас <br />24 августа 17:00</p>
         </section>
 
-        <section class="column">
-          <div>
-            <img src="images/img1.png" alt="Couple 2" class="photo-full" />
-          </div>
+        <section class="save-date column">
+          <img src="images/akbarake5.webp" alt="Couple 2" class="last-photo animate fade-up" />
         </section>
 
-        <section class="column">
+        <section class="column animate fade-up">
           <div
             style="display: flex; flex-direction: column; align-items: center"
           >

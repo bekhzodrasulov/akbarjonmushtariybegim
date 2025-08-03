@@ -70,32 +70,68 @@ body {
 }
 
 section {
-  padding: 0 20px;
   text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .save-date {
   background: #fff;
 }
 
-.save-date h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 2rem;
-  margin-bottom: 10px;
+.header-date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  padding-right: 20px;
 }
 
-.save-date .date {
-  font-size: 5rem;
+.header-date .date-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.header-date .date-time {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  font-size: 50px;
   color: #ccc;
 }
 
-.photo-full {
+.header-photo {
+  width: 310px;
+  height: 450px;
+  margin-top: 80px;
+  border-top-right-radius: 50px;
+}
+
+.second-container {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+.second-photo {
+  width: 310px;
+  height: 450px;
+  border-top-left-radius: 50px;
+}
+
+.letters {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
 }
 
 .scroll-hint {
   font-size: 1rem;
-  margin-top: 10px;
+  margin: 10px 0;
   color: #333;
 }
 
@@ -106,6 +142,7 @@ section {
 }
 
 .message-block h2 {
+  font-family: "Dancing Script", cursive;
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -113,8 +150,9 @@ section {
 }
 
 .message-block p {
+  font-family: "Great Vibes", cursive;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .section-dark {
@@ -127,41 +165,8 @@ section {
   margin: 10px 0;
 }
 
-.calendar {
-  font-size: 1.4rem;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-}
-
-.form-section {
-  background-color: #000;
-  color: #fff;
-  padding: 30px 20px;
-}
-
-.form-section input[type="text"] {
-  width: 80%;
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.form-section label {
-  display: block;
-  margin: 10px 0;
-}
-
-.form-section button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-}
 .music-control {
-  margin-bottom: 20px;
+  margin: 30px 0;
 }
 
 #playButton {
@@ -181,7 +186,7 @@ section {
 
 .countdown {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .countdown div {
@@ -196,7 +201,33 @@ section {
 }
 
 .countdown p {
-  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* Анимация контейнера .countdown */
+@keyframes countdownFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Анимация фона (svg изображения) */
+@keyframes bgFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .calendar p {
@@ -221,6 +252,11 @@ section {
   font-size: 20px;
 }
 
+.calendar-date {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+}
+
 .highlight {
   position: relative;
   font-weight: bold;
@@ -236,4 +272,119 @@ section {
   transform: translate(-50%, -50%);
   border: 1.5px solid red;
   border-radius: 50%;
+}
+
+.timing {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.restaurant-name {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}
+
+.btn-location {
+  width: 120px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.btn-location:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+  opacity: 0;
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Текст: сверху вниз */
+.fade-down {
+  transform: translateY(-40px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 390px) {
+  .header-date {
+    margin-top: 120px;
+    padding-right: 25px;
+  }
+  .header-date .date-text {
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+  }
+
+  .header-date .date-time {
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+    font-size: 50px;
+    color: #ccc;
+  }
+
+  .header-photo {
+    width: 280px;
+    height: 400px;
+    margin-top: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .second-photo {
+    width: 280px;
+    height: 400px;
+    border-top-left-radius: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-date {
+    padding-right: 20px;
+  }
+  .second-container {
+    padding-left: 15px;
+  }
 }
