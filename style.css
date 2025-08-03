@@ -106,7 +106,14 @@ section {
   width: 310px;
   height: 450px;
   margin-top: 80px;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 100px;
+}
+
+.forth-photo {
+  width: 370px;
+  height: 310px;
+  margin-top: 50px;
+  border-bottom-right-radius: 100px;
 }
 
 .second-container {
@@ -121,7 +128,7 @@ section {
 .second-photo {
   width: 310px;
   height: 450px;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 150px;
 }
 
 .letters {
@@ -142,17 +149,15 @@ section {
 }
 
 .message-block h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .message-block p {
-  font-family: "Great Vibes", cursive;
   line-height: 1.7;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .section-dark {
@@ -257,6 +262,7 @@ section {
 }
 
 .restaurant-name {
+  text-transform: uppercase;
   font-family: "Dancing Script", cursive;
   font-size: 35px;
 }
