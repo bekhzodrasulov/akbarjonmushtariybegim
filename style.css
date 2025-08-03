@@ -290,7 +290,7 @@ section {
 /* Базовый класс для скрытых элементов */
 .animate {
   opacity: 0;
-  transition: all 2s ease-out;
+  transition: opacity 2s ease, transform 2s ease;
   will-change: opacity, transform;
 }
 
