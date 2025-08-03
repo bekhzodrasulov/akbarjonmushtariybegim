@@ -35,6 +35,60 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap");
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-BoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Bold.woff2") format("woff2"),
+    url("LibertinusSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Italic.woff2") format("woff2"),
+    url("LibertinusSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBold.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-Regular.woff2") format("woff2"),
+    url("LibertinusSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libertinus Serif";
+  src: url("LibertinusSerif-SemiBoldItalic.woff2") format("woff2"),
+    url("LibertinusSerif-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +203,8 @@ section {
 }
 
 .message-block h2 {
+  font-family: "Libertinus Serif", serif;
+  font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -156,6 +212,8 @@ section {
 }
 
 .message-block p {
+  font-family: "Libertinus Serif", italic;
+  font-weight: normal;
   line-height: 1.7;
   font-size: 1.2rem;
 }
