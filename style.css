@@ -213,7 +213,8 @@ section {
 }
 
 .message-block h2 {
-  font-family: "Libertinus Serif", italic;
+  font-family: "Libertinus Serif";
+  font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -222,7 +223,8 @@ section {
 }
 
 .message-block p {
-  font-family: "Libertinus Serif", italic;
+  font-family: "Libertinus Serif";
+  font-style: italic;
   font-weight: normal;
   line-height: 1.7;
   font-size: 1.2rem;
